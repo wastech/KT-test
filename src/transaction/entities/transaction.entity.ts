@@ -23,6 +23,12 @@ export class Transaction extends Document {
   @Prop({ default: Date.now })
   timestamp: Date;
 
+  @Prop({
+    default: 'sent', // You can change this to 'received' for received transactions
+    enum: ['sent', 'received'],
+  })
+  transactionType: string;
+
   @Prop({ default: 'Pending', enum: ['Pending', 'Success', 'Error'] })
   status: string;
 }

@@ -9,7 +9,7 @@ export function setupSwagger(app) {
       'Fresh Picked Fare is a web app that specializes in offering freshly harvested or farm-sourced food products, with an emphasis on quality, health, and sustainability. It creates a positive and appealing image for customers who value fresh, natural, and locally-sourced food options. ',
     )
     .setVersion('1.0.0')
-    //.addBearerAuth() // Add bearer token authentication
+    .addBearerAuth() // Add bearer token authentication
     .build();
 
   const document = SwaggerModule.createDocument(app, options);

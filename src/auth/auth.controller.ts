@@ -23,6 +23,7 @@ import {
   ApiResponse,
   ApiBadRequestResponse,
   ApiUnauthorizedResponse,
+  ApiBearerAuth,
 } from '@nestjs/swagger'; // Import necessary decorators
 import { LoginUserDto } from './dto/login-user.dto';
 import { Public } from '../common/decorators/public.decorator';
@@ -91,6 +92,7 @@ Logs in a user and returns a JWT token if the login credentials are valid.
    * @returns {Object} An object representing the authenticated user's profile.
    */
   @Get('profile')
+  @ApiBearerAuth()
   @ApiOperation({ summary: 'Get user profile' }) // Add an operation summary
   @ApiResponse({
     status: 200,
@@ -103,6 +105,7 @@ Logs in a user and returns a JWT token if the login credentials are valid.
   }
 
   @Put(':id')
+  @ApiBearerAuth()
    @UseGuards(RolesGuard)
   @ApiOperation({ summary: 'Update user' })
   @ApiBadRequestResponse({ description: 'Invalid request body' })
@@ -129,6 +132,7 @@ Logs in a user and returns a JWT token if the login credentials are valid.
   @ApiBadRequestResponse({ description: 'Invalid request body' })
   @ApiUnauthorizedResponse({ description: 'Unauthorized' })
   @Patch('update-password')
+  @ApiBearerAuth()
   async changePassword(
     @Body('oldPassword') oldPassword: string,
     @Body('newPassword') newPassword: string,
