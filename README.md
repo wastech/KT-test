@@ -82,7 +82,7 @@ JWT_EXPIRING_DATE=<JWT expiring date>
 - Run npm start to start the server.
 
 ```bash
-npm start
+npm run start:dev
 
 ```
 
