@@ -6,7 +6,6 @@ import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
 import { mongooseConfig } from './database/mongoose.config';
 import { APP_FILTER } from '@nestjs/core';
-import { AnyExceptionFilter } from './http-exception.filter';
 import { CastErrorFilter } from './cast-error.filter';
 import { TransactionModule } from './transaction/transaction.module';
 
@@ -25,16 +24,11 @@ import { TransactionModule } from './transaction/transaction.module';
     AppService,
     AuthModule,
     UserModule,
-    {
-      provide: APP_FILTER,
-      useClass: AnyExceptionFilter,
-    },
 
     {
       provide: APP_FILTER,
       useClass: CastErrorFilter,
     },
-   
   ],
 })
 export class AppModule {}

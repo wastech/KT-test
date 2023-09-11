@@ -4,12 +4,12 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 export function setupSwagger(app) {
   const options = new DocumentBuilder()
-    .setTitle('Fresh Picked Fare')
+    .setTitle('Wallet Transaction Management System ')
     .setDescription(
-      'Fresh Picked Fare is a web app that specializes in offering freshly harvested or farm-sourced food products, with an emphasis on quality, health, and sustainability. It creates a positive and appealing image for customers who value fresh, natural, and locally-sourced food options. ',
+      'The Wallet Transaction Management System is a robust and secure web application built with NestJS, a powerful TypeScript framework for building scalable and efficient server-side applications. This system provides users with a convenient way to manage their digital wallet transactions, ensuring secure money transfers between users while maintaining detailed transaction logs.',
     )
     .setVersion('1.0.0')
-    .addBearerAuth() // Add bearer token authentication
+    .addBearerAuth() 
     .build();
 
   const document = SwaggerModule.createDocument(app, options);

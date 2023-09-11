@@ -54,7 +54,6 @@ export class AuthController {
   async register(
     @Body() createAuthDto: CreateAuthDto,
   ): Promise<{ user: Auth }> {
-    console.log(Auth);
     const user = await this.authService.register(createAuthDto);
     return { user };
   }

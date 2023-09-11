@@ -13,7 +13,7 @@ import { UpdateAuthDto } from './dto/update-auth.dto';
 import { LoginUserDto } from './dto/login-user.dto';
 import { Auth, AuthDocument } from './entities/auth.entity';
 import * as crypto from 'crypto';
-// import { Role } from './entities/auth.entity';
+
 
 @Injectable()
 export class AuthService {
@@ -23,13 +23,12 @@ export class AuthService {
   ) {}
 
   async register(createUserDto: CreateAuthDto): Promise<Auth> {
-    console.log(createUserDto);
     if (createUserDto.password && createUserDto.confirmPassword) {
       if (createUserDto.password !== createUserDto.confirmPassword) {
-        throw new Error('Passwords do not match');
+        throw new BadRequestException('Passwords do not match');
       }
     } else {
-      throw new Error('Password and Confirm Password are required');
+      throw new BadRequestException('Password and Confirm Password are required');
     }
 
     const hashedPassword = await bcrypt.hash(createUserDto.password, 10);
