@@ -26,7 +26,7 @@ The `transactions` collection stores transaction records between users.pp
 
 ### Database Schema Diagram
 
-![P2P-Transaction](https://github.com/wastech/KT-test/assets/56930241/620d5e0c-a3fd-4c3f-8c76-aa1aa9475a43)
+![P2P-Transaction](https://github.com/wastech/KT-test/assets/56930241/cae4120c-c2b7-4bde-a948-15eda7f8a7e6)
 
 The diagram above provides a visual representation of the database schema, illustrating the relationships between the `users` and `transactions` collections.
 
