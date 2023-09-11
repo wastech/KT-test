@@ -61,7 +61,7 @@ Before you begin, ensure you have met the following requirements:
 - Clone this repository to your local machine
   
 ```bash
-git@github.com:wastech/KT-tes.git
+git@github.com:wastech/KT-test.git
 ```
  - Navigate to the project directory:
 
