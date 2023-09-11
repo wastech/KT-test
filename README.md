@@ -38,7 +38,7 @@ The diagram above provides a visual representation of the database schema, illus
 - [Mongoose](https://mongoosejs.com/)
 - [JWT](https://jwt.io/)
 
- CMS API is built using Node.js, Express.js and Nest.js, with MongoDB as the database. I'm using the Mongoose library to interact with the database, and JWT for authentication.
+ WTMS API is built using Node.js, Express.js and Nest.js, with MongoDB as the database. I'm using the Mongoose library to interact with the database, and JWT for authentication.
 
 
 ## Swagger API Documentation
