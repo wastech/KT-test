@@ -1,6 +1,5 @@
 # Wallet Transaction Management System
 
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 The Wallet Transaction Management System is a robust and secure web application built with NestJS, a powerful TypeScript framework for building scalable and efficient server-side applications. This system provides users with a convenient way to manage their digital wallet transactions, ensuring secure money transfers between users while maintaining detailed transaction logs.
 
@@ -46,7 +45,7 @@ The diagram above provides a visual representation of the database schema, illus
 
 Swagger is a powerful tool that generates interactive API documentation, making it easier for developers to understand and interact with your API endpoints. You can access the Swagger documentation for this Wallet API by visiting the following URL:
 
-[Swagger API Documentation](http://localhost:3000/api-docs)
+[Swagger API Documentation](https://kt-test.onrender.com/api-docs#)
 
 
 
