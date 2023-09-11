@@ -31,6 +31,16 @@ The `transactions` collection stores transaction records between users.pp
 
 The diagram above provides a visual representation of the database schema, illustrating the relationships between the `users` and `transactions` collections.
 
+### Stack
+- [Node.js](https://nodejs.org/en)
+- [Nest.js](https://nestjs.com/)
+- [Express.js](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [JWT](https://jwt.io/)
+
+ CMS API is built using Node.js, Express.js and Nest.js, with MongoDB as the database. I'm using the Mongoose library to interact with the database, and JWT for authentication.
+
 
 ## Swagger API Documentation
 
@@ -50,7 +60,7 @@ Before you begin, ensure you have met the following requirements:
 - Node.js and npm installed on your development machine.
 - MongoDB database set up and running.
 - Clone this repository to your local machine
-- 
+  
 ```bash
 git@github.com:wastech/KT-tes.git
 ```
